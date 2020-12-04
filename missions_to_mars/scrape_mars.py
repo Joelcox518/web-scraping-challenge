@@ -13,6 +13,10 @@ from webdriver_manager.chrome import ChromeDriverManager
 import pandas as pd
 import time
 
+def init_browser():
+    executable_path = {'executable_path': ChromeDriverManager().install()}
+    return Browser('chrome', **executable_path, headless=False)
+
 
 # *NASA Mars News*
 # 
