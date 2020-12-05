@@ -131,6 +131,21 @@ def scrape_info():
         
     mars["hemispheres"]= hemisphere_image_url
 
+    mars= {
+    "news_title": news_title,
+    "news_p": news_p,
+    "featured_image_link": featured_image_link,
+    "Facts": html_table,
+    "hemisphere_image_title_1": hemisphere_image_url[0]["title"],
+    "hemisphere_image_url_1": hemisphere_image_url[0]["img_url"],
+    "hemisphere_image_title_2": hemisphere_image_url[1]["title"],
+    "hemisphere_image_url_2": hemisphere_image_url[1]["img_url"],
+    "hemisphere_image_title_3": hemisphere_image_url[2]["title"],
+    "hemisphere_image_url_3": hemisphere_image_url[2]["img_url"],
+    "hemisphere_image_title_4": hemisphere_image_url[3]["title"],
+    "hemisphere_image_url_4": hemisphere_image_url[3]["img_url"]
+    }
+
 
 
 
