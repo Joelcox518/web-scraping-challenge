@@ -26,7 +26,7 @@ def scrape():
 
     # Run the scrape function
     mars = scrape_mars.scrape_info()
-
+    print(mars["hemisphere_image_url_1"])
     # Update the Mongo database using update and upsert=True
     mongo.db.collection.update({}, mars, upsert=True)
 
